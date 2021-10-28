@@ -205,7 +205,7 @@ metadata:
     repository: https://github.com/redhat-marketplace/redhat-marketplace-operator
     support: IBM Corporation
     containerImage: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-operator:2.4.0
-    createdAt: "2021-10-27T13:51:41Z"
+    createdAt: "2021-10-28T07:00:04Z"
   labels:
     operatorframework.io/arch.amd64: supported
     operatorframework.io/arch.ppc64le: supported
