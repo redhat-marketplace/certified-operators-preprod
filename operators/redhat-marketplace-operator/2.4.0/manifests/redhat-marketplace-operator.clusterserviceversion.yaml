@@ -204,8 +204,8 @@ metadata:
     operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
     repository: https://github.com/redhat-marketplace/redhat-marketplace-operator
     support: IBM Corporation
-    containerImage: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-operator:2.4.0
-    createdAt: "2021-11-01T11:27:23Z"
+    containerImage: quay.io/dacleyra/redhat-marketplace-operator:2.4.0
+    createdAt: "2021-11-01T12:17:16Z"
   labels:
     operatorframework.io/arch.amd64: supported
     operatorframework.io/arch.ppc64le: supported
@@ -789,13 +789,13 @@ spec:
                       - name: OPERATOR_NAME
                         value: redhat-marketplace-operator
                       - name: RELATED_IMAGE_REPORTER
-                        value: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-reporter:2.4.0
+                        value: quay.io/dacleyra/redhat-marketplace-reporter:2.4.0
                       - name: RELATED_IMAGE_METRIC_STATE
-                        value: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-metric-state:2.4.0
+                        value: quay.io/dacleyra/redhat-marketplace-metric-state:2.4.0
                       - name: RELATED_IMAGE_AUTHCHECK
-                        value: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-authcheck:2.4.0
+                        value: quay.io/dacleyra/redhat-marketplace-authcheck:2.4.0
                       - name: RELATED_IMAGE_DQLITE
-                        value: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-data-service:2.4.0
+                        value: quay.io/dacleyra/redhat-marketplace-data-service:2.4.0
                       - name: WATCH_NAMESPACE
                         valueFrom:
                           fieldRef:
@@ -824,7 +824,7 @@ spec:
                         valueFrom:
                           fieldRef:
                             fieldPath: metadata.annotations['olm.operatorGroup']
-                    image: public-image-registry.apps-crc.testing/symposium/redhat-marketplace-operator:2.4.0
+                    image: quay.io/dacleyra/redhat-marketplace-operator:2.4.0
                     livenessProbe:
                       httpGet:
                         path: /healthz
