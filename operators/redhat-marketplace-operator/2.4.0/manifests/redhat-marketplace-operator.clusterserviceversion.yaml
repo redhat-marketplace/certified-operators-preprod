@@ -205,7 +205,7 @@ metadata:
     repository: https://github.com/redhat-marketplace/redhat-marketplace-operator
     support: IBM Corporation
     containerImage: quay.io/dacleyra/redhat-marketplace-operator:2.4.0
-    createdAt: "2021-11-02T08:09:58Z"
+    createdAt: "2021-11-02T08:22:44Z"
   labels:
     operatorframework.io/arch.amd64: supported
     operatorframework.io/arch.ppc64le: supported
